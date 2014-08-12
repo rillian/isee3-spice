@@ -1,0 +1,16 @@
+To use this metakernel, change the value of PATH_VALUES below to represent
+the location on your filesystem where the isee-3 spice kernels reside.
+
+\begindata
+
+   PATH_VALUES  = ( '/opt/project/isee/spice' )
+	PATH_SYMBOLS = ( 'ROOT' )
+
+   KERNELS_TO_LOAD = (
+                       '$ROOT/naif0010.tls'
+							  '$ROOT/pconstants.tpc'
+							  '$ROOT/ICE_REBOOT_SCLKSCET.tsc'
+							 )
+
+\begintext
+
